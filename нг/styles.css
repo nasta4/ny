@@ -1,0 +1,444 @@
+ /* стили для шапки */ 
+ body { 
+  font-family: "CelestinaRegular";
+  background-image: url("фотки/нгг.jpg"); 
+} 
+ .header { 
+  background-color: #D6001C3B; 
+  text-align: center; 
+  padding: 20px; 
+ } 
+ .header h1 { 
+  color: white; 
+ } 
+ .header h2 { 
+  color: white; 
+ }
+  /* аудио */
+  /* Новогодний стиль для элементов управления */
+.custom-audio::-webkit-media-controls-panel {
+  background: #ff0000; /* Замените цветом вашего выбора */
+  color: #ffffff; /* Цвет значков и текста */
+}
+
+
+ /* стили для карусели */ 
+ .carousel { 
+  overflow: hidden; 
+ } 
+ .carousel ul { 
+  list-style-type: none; 
+  width: 100%; 
+  animation: slide 15s infinite; 
+   
+ } 
+ .carousel li { 
+  float: left; 
+  width: 33.33%; 
+   
+ } 
+ .carousel img { 
+  width: 500px;
+ height: 450px;
+ } 
+
+ @keyframes slide { 
+  0% { left: 0; } 
+  20% { left: 0; } 
+  25% { left: -100%; } 
+  45% { left: -100%; } 
+  50% { left: -200%; } 
+  70% { left: -200%; } 
+  75% { left: -300%; } 
+  95% { left: -300%; } 
+  100% { left: 0; } 
+ } 
+  a {
+    background-color: #FBC38B;
+    font-weight: bold;
+    padding: 5px;
+  }
+ /* стили для подвала */ 
+ .footer { 
+  background-color: #123C377A; 
+  text-align: center; 
+  padding: 20px; 
+ } 
+ .footer p { 
+  color: white; 
+ }
+ .header h1 {
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.footer p {
+  animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+a {
+  animation: shake 2s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+ /* стили для гирлянды*/ 
+ .garland {  
+  --red: #ff2c2c;  
+  --yellow: #ffeb00;  
+  --green: #00ff5d;  
+  --blue: #0095ff;  
+  --speed: 1.5s;  
+ 
+ }
+ .garland {
+  margin-left: auto;
+ 
+}
+.red {  
+  fill: var(--red);  
+  box-shadow:  -5px -5px 5px black;  
+  animation: var(--speed) alternate 0s infinite blinkRed;  
+}  
+  
+.yellow {  
+  fill: var(--yellow);  
+  animation: var(--speed) alternate 0s infinite blinkYellow;  
+}  
+  
+.blue {  
+  fill: var(--blue);  
+  animation: var(--speed) alternate 0s infinite blinkBlue;  
+}  
+  
+.green {  
+  fill: var(--green);  
+  animation: var(--speed) alternate 0s infinite blinkGreen;  
+}  
+  
+.red {  
+  fill: var(--red);  
+  box-shadow:  -5px -5px 5px black;  
+  animation: var(--speed) alternate 0s infinite blinkRed;  
+}  
+  
+.yellow {  
+  fill: var(--yellow);  
+  animation: var(--speed) alternate 0s infinite blinkYellow;  
+}  
+  
+.blue {  
+  fill: var(--blue);  
+  animation: var(--speed) alternate 0s infinite blinkBlue;  
+}  
+  
+.green {  
+  fill: var(--green);  
+  animation: var(--speed) alternate 0s infinite blinkGreen;  
+}  
+  
+@keyframes blinkRed {  
+  0%{  
+    fill: var(--red);  
+  }  
+  25% {  
+    fill: var(--blue);  
+  }  
+  50% {  
+    fill: var(--green);  
+  }  
+  75% {  
+    fill: var(--yellow);  
+  }  
+}  
+  
+@keyframes blinkYellow {  
+  0%{  
+    fill: var(--yellow);  
+  }  
+  25% {  
+    fill: var(--red);  
+  }  
+  50% {  
+    fill: var(--blue);  
+  }  
+  75% {  
+    fill: var(--green);  
+  }  
+}  
+  
+@keyframes blinkBlue {  
+  0%{  
+    fill: var(--blue);  
+  }  
+  25% {  
+    fill: var(--green);  
+  }  
+  50% {  
+    fill: var(--yellow);  
+  }  
+  75% {  
+    fill: var(--red);  
+  }  
+}  
+  
+@keyframes blinkGreen {  
+  0%{  
+    fill: var(--green);  
+  }  
+  25% {  
+    fill: var(--yellow);  
+  }  
+  50% {  
+    fill: var(--red);  
+  }  
+  75% {  
+    fill: var(--blue);  
+  }  
+  
+}
+@keyframes blinkRed {  
+  0%{  
+    fill: var(--red);  
+  }  
+  25% {  
+    fill: var(--blue);  
+  }  
+  50% {  
+    fill: var(--green);  
+  }  
+  75% {  
+    fill: var(--yellow);  
+  }  
+}  
+  
+@keyframes blinkYellow {  
+  0%{  
+    fill: var(--yellow);  
+  }  
+  25% {  
+    fill: var(--red);  
+  }  
+  50% {  
+    fill: var(--blue);  
+  }  
+  75% {  
+    fill: var(--green);  
+  }  
+}  
+  
+@keyframes blinkBlue {  
+  0%{  
+    fill: var(--blue);  
+  }  
+  25% {  
+    fill: var(--green);  
+  }  
+  50% {  
+    fill: var(--yellow);  
+  }  
+  75% {  
+    fill: var(--red);  
+  }  
+}  
+  
+@keyframes blinkGreen {  
+  0%{  
+    fill: var(--green);  
+  }  
+  25% {  
+    fill: var(--yellow);  
+  }  
+  50% {  
+    fill: var(--red);  
+  }  
+  75% {  
+    fill: var(--blue);  
+  }  
+}
+
+/* стили для снега*/ 
+.snowflake {
+    color: #fff;
+    font-size: 2em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    animation-delay: 0s, 0s;
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    animation-delay: 1s, 1s;
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    animation-delay: 6s, .5s;
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    animation-delay: 4s, 2s;
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    animation-delay: 2s, 2s;
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    animation-delay: 8s, 3s;
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    animation-delay: 6s, 2s;
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    animation-delay: 2.5s, 1s;
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    animation-delay: 1s, 0s;
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    animation-delay: 3s, 1.5s;
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(80px);
+        -webkit-transform: translateX(80px);
+        -moz-transform: translateX(80px);
+        -o-transform: translateX(80px);
+        -ms-transform: translateX(80px);
+    }
+    100% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+    }
+}
+/* Стили для формы */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #e33e52;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+label, textarea, button {
+  display: block;
+  margin: 10px 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e33e52;
+  border-radius: 5px;
+}
+
+
+
+/* Стили для отображения поздравлений */
+#greetingsList {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #e33e52;
+  border-radius: 5px;
+  background-color: #fff;
+}
+/* Новогодний стиль для кнопки */
+.button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 10px;}
+
+
+.button:hover {
+  background-color: #ffffff;
+    color: #ff0000;}
